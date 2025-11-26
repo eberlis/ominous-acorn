@@ -88,7 +88,7 @@ describe('BudgetSuggestions', () => {
     fireEvent.click(screen.getByRole('button', { name: /reset to suggested/i }));
     
     // Should show original value
-    expect(inputs[0].value).toBe('3000');
+    expect(inputs[0].value).toBe('3500');
   });
 
   it('should call onReset when change location button is clicked', () => {

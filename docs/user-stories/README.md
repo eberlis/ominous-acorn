@@ -1,7 +1,7 @@
 # User Stories - Personal Finance Management Application
 
 ## Overview
-This directory contains individual user stories for the Personal Finance Management Application. Each story is numbered and stored in a separate file for easier tracking and management.
+This document serves as an index for all user stories in the Personal Finance Management Application. All user stories are tracked as GitHub Issues in the repository.
 
 ## Epic
 **Personal Finance Management System**: As a user, I want to effectively manage my personal finances so that I can live within my budget, save for the future, give to my community, and make smart investment decisions.
@@ -9,29 +9,33 @@ This directory contains individual user stories for the Personal Finance Managem
 ## User Stories Index
 
 ### MVP Features (Release 1.0)
-1. [Location-Based Budget Suggestions](./001-location-based-budget-suggestions.md) - 8 points
-2. [Automatic Tithing Calculation (10%)](./002-automatic-tithing-calculation.md) - 5 points
-3. [Savings and Emergency Fund Management](./003-savings-emergency-fund-management.md) - 8 points
-6. [Dashboard Overview](./006-dashboard-overview.md) - 8 points
-7. [Expense Tracking and Categorization](./007-expense-tracking-categorization.md) - 13 points
+1. [Location-Based Budget Suggestions](https://github.com/eberlis/ominous-acorn/issues/1) - 8 points
+2. [Automatic Tithing Calculation (10%)](https://github.com/eberlis/ominous-acorn/issues/2) - 5 points
+3. [Savings and Emergency Fund Management](https://github.com/eberlis/ominous-acorn/issues/3) - 8 points
+6. [Dashboard Overview](https://github.com/eberlis/ominous-acorn/issues/6) - 8 points
+7. [Expense Tracking and Categorization](https://github.com/eberlis/ominous-acorn/issues/7) - 13 points
 
 **MVP Total: 42 story points**
 
 ### Release 1.5 Features
-4. [Monthly Spending Reduction Suggestions](./004-spending-reduction-suggestions.md) - 13 points
-5. [Investment Allocation and Recommendations](./005-investment-allocation-recommendations.md) - 13 points
-9. [Reports and Analytics](./009-reports-analytics.md) - 8 points
+4. [Monthly Spending Reduction Suggestions](https://github.com/eberlis/ominous-acorn/issues/4) - 13 points
+5. [Investment Allocation and Recommendations](https://github.com/eberlis/ominous-acorn/issues/5) - 13 points
+9. [Reports and Analytics](https://github.com/eberlis/ominous-acorn/issues/9) - 8 points
 
 **Release 1.5 Total: 34 story points**
 
 ### Release 2.0 Features
-8. [Financial Goals and Milestones](./008-financial-goals-milestones.md) - 8 points
-10. [Alerts and Notifications](./010-alerts-notifications.md) - 5 points
+8. [Financial Goals and Milestones](https://github.com/eberlis/ominous-acorn/issues/8) - 8 points
+10. [Alerts and Notifications](https://github.com/eberlis/ominous-acorn/issues/10) - 5 points
 
 **Release 2.0 Total: 13 story points**
 
-## Story Template
-When creating new user stories, use the template provided in [user-story-template.md](./user-story-template.md).
+## Working with User Stories
+All user stories are managed as GitHub Issues. To create a new user story:
+1. Create a new issue in the repository
+2. Use the user story template format
+3. Add appropriate labels (mvp, feature, priority, etc.)
+4. Link related issues in the description
 
 ## Story Format
 Each user story file contains:
