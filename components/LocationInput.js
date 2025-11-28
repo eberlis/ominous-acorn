@@ -1,15 +1,17 @@
 import { useState } from 'react';
+import { getAllCities } from '../lib/costOfLivingData';
 import styles from './LocationInput.module.css';
 
 export default function LocationInput({ onLocationSubmit }) {
   const [location, setLocation] = useState('');
   const [error, setError] = useState('');
+  const cities = getAllCities();
 
   const handleSubmit = (e) => {
     e.preventDefault();
     
     if (!location.trim()) {
-      setError('Please enter a location');
+      setError('Please select a location');
       return;
     }
 
@@ -22,17 +24,22 @@ export default function LocationInput({ onLocationSubmit }) {
       <form onSubmit={handleSubmit} className={styles.form}>
         <div className={styles.inputGroup}>
           <label htmlFor="location" className={styles.label}>
-            Enter Your Location
+            Select Your Location
           </label>
-          <input
+          <select
             id="location"
-            type="text"
             value={location}
             onChange={(e) => setLocation(e.target.value)}
-            placeholder="e.g., New York, NY"
             className={styles.input}
-            aria-label="Location input"
-          />
+            aria-label="Location selector"
+          >
+            <option value="">-- Choose a city --</option>
+            {cities.map((city) => (
+              <option key={city} value={city}>
+                {city}
+              </option>
+            ))}
+          </select>
           {error && (
             <p className={styles.error} role="alert">
               {error}
@@ -44,7 +51,7 @@ export default function LocationInput({ onLocationSubmit }) {
         </button>
       </form>
       <p className={styles.hint}>
-        Try: New York, NY • Los Angeles, CA • Chicago, IL • Austin, TX • Miami, FL
+        Select a city to get personalized budget suggestions based on local cost of living
       </p>
     </div>
   );
