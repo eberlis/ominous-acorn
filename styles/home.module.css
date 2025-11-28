@@ -5,6 +5,33 @@
   min-height: 100vh;
 }
 
+.nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.navLink {
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.navLink:hover {
+  background: linear-gradient(135deg, #0070f3 0%, #00c9ff 100%);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 112, 243, 0.3);
+}
+
 .header {
   text-align: center;
   margin-bottom: 3rem;

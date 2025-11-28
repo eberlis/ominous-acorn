@@ -1,0 +1,251 @@
+.container {
+  width: 100%;
+}
+
+.totalCard {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.totalLabel {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.totalAmount {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.periodLabel {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.95rem;
+  opacity: 0.9;
+}
+
+.transactionCount {
+  margin: 0.25rem 0 0 0;
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+
+.breakdown {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sectionTitle {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.topCategories {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.categoryItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.categoryIcon {
+  font-size: 1.5rem;
+}
+
+.categoryName {
+  flex: 1;
+  font-weight: 600;
+  color: #333;
+  font-size: 1rem;
+}
+
+.categoryAmount {
+  font-weight: 700;
+  color: #2c3e50;
+  font-size: 1.1rem;
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: #f1f3f5;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progressFill {
+  height: 100%;
+  transition: width 0.6s ease;
+  border-radius: 4px;
+}
+
+.categoryStats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.percentage {
+  font-weight: 600;
+}
+
+.count {
+  opacity: 0.8;
+}
+
+.allCategories {
+  margin-top: 1.5rem;
+  border-top: 1px solid #e9ecef;
+  padding-top: 1rem;
+}
+
+.showMore {
+  cursor: pointer;
+  color: #4A90E2;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  user-select: none;
+}
+
+.showMore:hover {
+  color: #357ABD;
+}
+
+.categoriesList {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.categoryRow {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+}
+
+.categoryRow .categoryIcon {
+  font-size: 1.25rem;
+}
+
+.categoryRow .categoryName {
+  flex: 1;
+  font-weight: 500;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.categoryRow .categoryAmount {
+  font-weight: 600;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.categoryRow .percentage {
+  min-width: 50px;
+  text-align: right;
+  font-weight: 600;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.statCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.statLabel {
+  font-size: 0.875rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.statValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.emptyState {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: white;
+  border-radius: 12px;
+  color: #666;
+}
+
+.emptyState p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .totalCard {
+    padding: 1.5rem;
+  }
+
+  .totalAmount {
+    font-size: 2.5rem;
+  }
+
+  .breakdown {
+    padding: 1.5rem;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  .categoryHeader {
+    flex-wrap: wrap;
+  }
+
+  .categoryIcon {
+    font-size: 1.25rem;
+  }
+
+  .categoryRow {
+    flex-wrap: wrap;
+  }
+
+  .categoryRow .percentage {
+    min-width: auto;
+  }
+}

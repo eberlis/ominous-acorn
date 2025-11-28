@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import Link from 'next/link'
 import LocationInput from '../components/LocationInput'
 import BudgetSuggestions from '../components/BudgetSuggestions'
 import styles from '../styles/home.module.css'
@@ -36,6 +37,11 @@ function Home() {
 
   return (
     <main className={styles.main}>
+      <nav className={styles.nav}>
+        <Link href="/" className={styles.navLink}>🏠 Home</Link>
+        <Link href="/expenses" className={styles.navLink}>💰 Expenses</Link>
+      </nav>
+      
       <div className={styles.header}>
         <h1 className={styles.title}>💰 Smart Budget Planner</h1>
         <p className={styles.description}>
