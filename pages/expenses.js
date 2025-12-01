@@ -86,6 +86,7 @@ export default function Expenses() {
         <nav className={styles.nav}>
           <Link href="/" className={styles.navLink}>🏠 Home</Link>
           <Link href="/expenses" className={styles.navLink}>💰 Expenses</Link>
+          <Link href="/savings" className={styles.navLink}>🎯 Savings</Link>
         </nav>
         
         <header className={styles.header}>
