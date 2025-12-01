@@ -421,6 +421,7 @@ export default function SavingsGoals({
               );
               const milestones = getMilestones(goal.targetAmount);
               const reachedMilestones = getReachedMilestones(goal.currentAmount, goal.targetAmount);
+              const reachedMilestonePercents = new Set(reachedMilestones.map(m => m.percent));
               const nextMilestone = getNextMilestone(goal.currentAmount, goal.targetAmount);
 
               return (
@@ -480,7 +481,7 @@ export default function SavingsGoals({
                       {milestones.map(milestone => (
                         <div
                           key={milestone.percent}
-                          className={`${styles.milestone} ${reachedMilestones.includes(milestone) ? styles.milestoneReached : ''}`}
+                          className={`${styles.milestone} ${reachedMilestonePercents.has(milestone.percent) ? styles.milestoneReached : ''}`}
                           style={{ left: `${milestone.percent}%` }}
                           title={`${milestone.percent}% - ${formatAmount(milestone.amount)}`}
                         />
