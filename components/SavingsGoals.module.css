@@ -1,0 +1,671 @@
+.container {
+  width: 100%;
+}
+
+/* Overview Section */
+.overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.overviewCard {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(102, 126, 234, 0.3);
+}
+
+.overviewLabel {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+.overviewAmount {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.overviewSubtext {
+  margin: 0.5rem 0 0 0;
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.overviewProgress {
+  height: 6px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  margin-top: 0.75rem;
+  overflow: hidden;
+}
+
+.overviewProgressFill {
+  height: 100%;
+  background: white;
+  border-radius: 3px;
+  transition: width 0.6s ease;
+}
+
+/* Emergency Fund Section */
+.emergencySection {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #333;
+}
+
+.editButton, .addButton {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #f8f9fa;
+  color: #4A90E2;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.editButton:hover, .addButton:hover {
+  background: #4A90E2;
+  color: white;
+}
+
+.emergencyCard {
+  background: linear-gradient(135deg, #E74C3C10, #E74C3C05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border: 1px solid #E74C3C30;
+}
+
+.emergencyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.emergencyLabel {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.emergencyTarget {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #E74C3C;
+}
+
+.emergencyStats {
+  text-align: right;
+}
+
+.emergencyCurrent {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.emergencyPercent {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.emergencyProgress {
+  height: 10px;
+  background: #f1f3f5;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.emergencyProgressFill {
+  height: 100%;
+  background: linear-gradient(90deg, #E74C3C, #C0392B);
+  border-radius: 5px;
+  transition: width 0.6s ease;
+}
+
+.emergencyProjection {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.emergencyComplete {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #27AE60;
+  font-weight: 600;
+}
+
+/* Emergency Fund Form */
+.emergencyForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.monthsSelector {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.monthButton {
+  padding: 0.75rem 1rem;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.monthButton:hover {
+  border-color: #E74C3C;
+}
+
+.monthButtonActive {
+  border-color: #E74C3C;
+  background: #E74C3C10;
+  color: #E74C3C;
+}
+
+.recommendedInfo {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.recommendedInfo p {
+  margin: 0 0 0.5rem 0;
+}
+
+.recommendedInfo ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.recommendedInfo li {
+  margin-bottom: 0.25rem;
+}
+
+/* Goals Section */
+.goalsSection {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Goal Form */
+.goalForm {
+  background: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.formTitle {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.formGroup {
+  margin-bottom: 1rem;
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.input, .textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.input:focus, .textarea:focus {
+  outline: none;
+  border-color: #4A90E2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+.textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.typeSelector {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 0.5rem;
+}
+
+.typeButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.75rem 0.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #f8f9fa;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.typeButton:hover {
+  background: #e9ecef;
+}
+
+.typeButtonActive {
+  background: white;
+}
+
+.typeIcon {
+  font-size: 1.5rem;
+}
+
+.typeName {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.formActions {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.submitButton {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.submitButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.cancelButton {
+  padding: 0.75rem 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  color: #666;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.cancelButton:hover {
+  background: #f8f9fa;
+}
+
+/* Empty State */
+.emptyState {
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.emptyIcon {
+  font-size: 3rem;
+  margin: 0 0 1rem 0;
+}
+
+.emptyText {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.emptySubtext {
+  margin: 0;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Goals List */
+.goalsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.goalCard {
+  background: white;
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: all 0.3s;
+}
+
+.goalCard:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.goalHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.goalInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.goalIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+.goalName {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.goalType {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+.goalActions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.iconButton {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #f8f9fa;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s;
+}
+
+.iconButton:hover {
+  background: #e9ecef;
+}
+
+.goalAmounts {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.amountCurrent, .amountTarget {
+  display: flex;
+  flex-direction: column;
+}
+
+.amountLabel {
+  font-size: 0.8rem;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.amountValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.goalProgress {
+  margin-bottom: 1rem;
+}
+
+.progressBar {
+  position: relative;
+  height: 12px;
+  background: #f1f3f5;
+  border-radius: 6px;
+  overflow: visible;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 6px;
+  transition: width 0.6s ease;
+}
+
+.milestone {
+  position: absolute;
+  top: -2px;
+  width: 4px;
+  height: 16px;
+  background: #ddd;
+  border-radius: 2px;
+  transform: translateX(-50%);
+}
+
+.milestoneReached {
+  background: #27AE60;
+}
+
+.progressStats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+.progressPercent {
+  font-weight: 700;
+  color: #333;
+}
+
+.progressRemaining {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.milestonesReached, .nextMilestone {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.milestoneLabel {
+  margin-right: 0.5rem;
+}
+
+.milestoneList {
+  font-weight: 600;
+  color: #27AE60;
+}
+
+.goalProjection {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.goalComplete {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.95rem;
+  color: #27AE60;
+  font-weight: 600;
+}
+
+.deadlinePassed {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #E74C3C;
+}
+
+/* Contribution Form */
+.contributionForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.contributionInput {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.contributionSubmit {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  background: #27AE60;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contributionSubmit:hover {
+  background: #219A52;
+}
+
+.contributionCancel {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: white;
+  color: #666;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.contributionCancel:hover {
+  background: #f8f9fa;
+}
+
+.addContributionButton {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: 2px dashed #ddd;
+  border-radius: 8px;
+  background: transparent;
+  color: #666;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.addContributionButton:hover {
+  border-color: #4A90E2;
+  color: #4A90E2;
+  background: #4A90E210;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .overview {
+    grid-template-columns: 1fr;
+  }
+
+  .formRow {
+    grid-template-columns: 1fr;
+  }
+
+  .typeSelector {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .emergencyHeader {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .emergencyStats {
+    text-align: left;
+  }
+
+  .goalHeader {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .goalActions {
+    align-self: flex-end;
+  }
+
+  .monthsSelector {
+    flex-direction: column;
+  }
+
+  .monthButton {
+    flex: 1;
+    text-align: center;
+  }
+
+  .contributionForm {
+    flex-wrap: wrap;
+  }
+
+  .contributionInput {
+    width: 100%;
+    flex: none;
+  }
+}
